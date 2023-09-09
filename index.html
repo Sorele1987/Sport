@@ -7,14 +7,19 @@
         <title>Sportit</title>
     </head>
     <body>
-        <header>
-            <div class="container">
+        <header class="top-nav">
+            <div>
                 <h1>
-                    <img src="./img/logo.svg" alt="" />
+                    <img src="./img/logo.svg" alt="sportit logo" >
                 </h1>
-                <img src="./img/icon-hamburger.svg" alt="" class="menu"/>
+            </div>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+            </label>
+                <img src="./img/icon-hamburger.svg" alt="" class="hamburger"/>
                 <nav>
-                    <ul>
+                    <ul class="menu">
                         <li><a href="#">Sports</a></li>
                         <li><a href="#">Products</a></li>
                         <li><a href="#">About Us</a></li>
@@ -22,79 +27,101 @@
                         <li><a href="#">Community</a></li>
                     </ul>
                 </nav>
-                <a href="#" class="btn__contact">Contact</a>
+                <a href="#" class="btn__contact headerbtn_contact">Contact</a>
             </div>
         </header>
         <main>
-            <div class="container">
-                <img src="./img/padel-intro.png" alt=""/>
+            <section class="player">
+            <div class="player_img_container">
+                <img class="player_image" src="./img/padel-intro.png" alt="Jugador de padel golpeando la pelota"/>
             </div>
-            <div class="description">
-                <h2>LIVE: Follow the Telcel Huawei Mexico Open 2022 for free</h2>
-                <p>The final Open of the 2022 World Padel Tour season is underway, don't miss out on any of the action!</p>
-                <a href="#" class="btn__contact">Contact</a>
+            <div class="player_description">
+                <h2 class="player_title">Follow the Telcel Huawei Mexico Open 2022 for free</h2>
+                <p class="player_text">The final Open of the 2022 World Padel Tour season is underway, don't miss out on any of the action!</p>
+                <a href="#" class="btn__contact player_btn">Contact</a>
             </div>
+        </section>
+        <section class="section_one">
+            <div class="section_one_container">
+            <h2 class="section_one_title">What´s different between pros?</h2>
+            <p class="section_one_description">Manage provides all the functionality your teas needs, without the complexity. Our software is tailor-made for modern digital product teams</p>
+            </div>
+        <div class="box">
+            <section class="cards">
+            <div class="box_cards">
+                <div class="box_cards_number"><span class="perks_number">01</span></div>
+                <p class="box_cards_title">Track company-wide progress</p>
+                <p class="box_cards_description">Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.</p>
+            </div>
+            <div class="box_cards">
+                <div class="box_cards_number"><span class="perks_number">02</span></div>
+                <p class="box_cards_title">Advance built-in reports</p>
+                <p class="box_cards_description">Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.</p>
+            </div>
+            <div class="box_cards card_3">
+                <div class="box_cards_number"><span class="perks_number">03</span></div>
+                <p class="box_cards_title">Everything you need in one place</p>
+                <p class="box_cards_description">Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.</p>
+            </div>
+            </section>
+        </div>
+        <section class="best-month">
+            <h2 class="best-month_title">Best of the month</h2>
+            <div class="shadow-box"></div>
+            <div class="player-card_container">
+            <div class="player-card">
+                <img class="player-card_image" src="./img/avatar.lebron.png" alt="tennis-player">
+                <p class="player-card_title">Sanyo</p>
+                <p class="player-card_description">Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+            </div>
+            <div class="player-card">
+                <img class="player-card_image" src="./img/avatar-sanyo.png" alt="tennis-player">
+                <p class="player-card_title">Lebron</p>
+                <p class="player-card_description">Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+            </div>
+            <div class="player-card">
+                <img class="player-card_image" src="./img/avatar-navarro.png" alt="tennis-player">
+                <p class="player-card_title">Navarro</p>
+                <p class="player-card_description">Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+            </div>
+            </div>
+            <a href="#" class="btn_cta best-month_btn">More</a>
+        </section>
+        <div class="bg-light-blue">
+            <section class="get-know">
+            <h2 class="get-know_title">Get to know the best teams of the year</h2>
+            <a class="btn_cta get-know_btn" href="#">Go for it</a>
+            </section>
+        </div>
         </main>
-        <section class="section__uno">
-            <div class="container">
-                <h3>What's different between pros?</h3>
-                <p>Manage provides all the functionality your teas needs, without the complexity. Our software is tailor-made for modern digital product teams</p>
-            </div>
-        </section>
-        <section class="section__cards">
-            <div class="container">
-                <div class="card">
-                <div class="card__header">
-                        <span>01</span>
-                        <h3>Track company-wide progress</h3>   
-                </div> 
-                <p>
-                    Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.
-                </p>
-            <div class="card__header">
-                <span>02</span>
-                <h3>Advance built-in reports</h3>    
-            </div>    
-            <p>
-                Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.
-            </p>
-
-        <div class="card__header">
-            <span>03</span>
-            <h3>Everything you need in one place</h3>    
-        </div>    
-        <p>
-            Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.
-        </p>
-    </div>
-    </div>
-    </div>
-        </section>
-        <footer class="footer"> 
+        <div class="bg-dark-blue">
+        <footer class="footer">
+            <!-- add a simple form with an input and a submit button -->
             <form class="footer_form">
-                <input class="footer_form-input" type="text" placeholder="Update in your inbox...">
-                <input class="btn_cta footer_form-btn" type="submit" value="Go">
+            <input class="footer_form-input" type="text" placeholder="Update in your inbox...">
+            <input class="btn_cta footer_form-btn" type="submit" value="Go">
             </form>
-            <div class="footer-links">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Trainning</a></li>
-                    <li><a href="#">Community</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
+            <div class="footer_links-container">
+            <ul class="links_list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Training</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
             </div>
-            <div class="social-links">
-                <img src="./img/icon-facebook.svg" alt="">
-                <img src="./img/icon-youtube.svg" alt="">
-                <img src="./img/icon-twitter.svg" alt="">
-                <img src="./img/icon-pinterest.svg" alt="">
-                <img src="./img/icon-instagram.svg" alt="">
+            <div class="footer_socials">
+            <a href="#"><img src="./img/icon-facebook.svg" alt="Facebook icon link"></a>
+            <a href="#"><img src="./img/icon-youtube.svg" alt="Youtube icon link"></a>
+            <a href="#"><img src="./img/icon-youtube.svg" alt="Twitter icon link"></a>
+            <a href="#"><img src="./img/icon-pinterest.svg" alt="Pinteres icon link"></a>
+            <a href="#"><img src="./img/icon-instagram.svg" alt="Instagram icon link"></a>
             </div>
-            <img src="./img/logo.svg" alt="">
-            <p>Copyright 2020. All Rights Reserved</p>
+            <img class="footer_logo" src="./img/logo.svg" alt="sportit logo">
+            <p class="footer_copy-right">Copyright 2020. All Rights Reserved</p>
         </footer>
+        </div>
     </body>
-</html>
+    </html>
