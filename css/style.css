@@ -279,8 +279,10 @@ line-height: 151.1%;  } }
     padding-left: 4rem; }
     @media (min-width: 767px) {
         .box_cards {
-            display: grid;
-            width: 54rem; } }
+            flex-flow: wrap;
+            width: 54rem;
+            margin-right: 80px;
+            } }
     .box_cards_number {
         display: flex;
         justify-content: center;
